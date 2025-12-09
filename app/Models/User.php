@@ -42,4 +42,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    /**
+     * relation to loyalty_points
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function loyaltyPoints(){
+        return $this->hasMany(LoyaltyPoints::class, 'customer_id', 'id');
+    }
 }
