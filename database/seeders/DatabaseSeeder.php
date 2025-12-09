@@ -20,7 +20,15 @@ class DatabaseSeeder extends Seeder
              * run LoyaltyPointsSeeder and then run PointTransactionsSeeder
              */
             LoyaltyPointsSeeder::class,
-            PointTransactionsSeeder::class
+            PointTransactionsSeeder::class,
+
+
+
+            /**
+             * run TicketSeeder and then run TicketAssignmentSeeder
+             */
+            TicketSeeder::class,
+            TicketAssignmentSeeder::class,
         ]);
     }
 }
