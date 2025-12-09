@@ -29,6 +29,14 @@ class DatabaseSeeder extends Seeder
              */
             TicketSeeder::class,
             TicketAssignmentSeeder::class,
+
+
+
+            /**
+             * run VoucherSeeder and then run VoucherDetailSeeder
+             */
+            VoucherSeeder::class,
+            VoucherDetailSeeder::class,
         ]);
     }
 }
